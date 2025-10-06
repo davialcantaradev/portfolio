@@ -1,0 +1,28 @@
+@import url(home.css);
+@import url(sidebar.css);
+@import url(apresentacao.css);
+@import url(projetos.css);
+@import url(contato.css);
+@import url(rodape.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(1vw + 1px);
+}
+
+:root {
+    --fonte-principal: "Cascadia Code", sans-serif;
+    --background-escuro: #272822;
+    --background-claro: #2C2D29;
+    --cor-verde: #A6E22E;
+    --cor-branco: #F8F8F2;
+    --cor-cinza-escuro: #222222;
+    /* --rosa: #F92672; */
+    /* --amarelo: #E6DB74; */
+}
+
+html {
+    scroll-behavior: smooth;
+}

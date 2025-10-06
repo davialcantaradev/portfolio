@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="sessao home" id="home">
+            <div class="home__texto">
+                <h1 class="titulo">Olá, eu me chamo <span>Davi</span>,<br>e sou desenvolvedor front-end.</h1>
+                <h2 class="subtitulo">Este é o meu portfólio de projetos.</h2>
+            </div>
+            <div class="scroll-icon"></div>
+        </section>
+        <nav class="navegacao">
+            <ul class="navegacao-lista">
+                <li class="navegacao-lista__item" title="Ir para sessão Home">
+                    <a class="etiqueta" href="#home">
+                        <span class="etiqueta__texto">Home</span>
+                        <div class="etiqueta__ponto"></div>
+                    </a>
+                </li>
+                <li class="navegacao-lista__item ativo" title="Ir para sessão Sobre mim">
+                    <a class="etiqueta" href="#apresentacao">
+                        <span class="etiqueta__texto">Apresentação</span>
+                        <div class="etiqueta__ponto"></div>
+                    </a>
+                </li>
+                <li class="navegacao-lista__item" title="Ir para sessão Projetos">
+                    <a class="etiqueta" href="#projetos">
+                        <span class="etiqueta__texto">Projetos</span>
+                        <div class="etiqueta__ponto"></div>
+                    </a>
+                </li>
+                <li class="navegacao-lista__item" title="Ir para sessão Contatos">
+                    <a class="etiqueta" href="#contatos">
+                        <span class="etiqueta__texto">Contatos</span>
+                        <div class="etiqueta__ponto"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="sessao apresentacao" id="apresentacao">
+            <h2 class="apresentacao__titulo">Mas antes, deixe-me me apresentar.</h2>
+            <p class="apresentacao__descricao">Me chamo Davi de Alcantara Saraiva e estou cursando Análise e Desenvolvimento de Sistemas. <br><br>Fiz transição de carreira e encontrei na programação a combinação entre lógica, tecnologia e criatividade que me conquistou. <br><br> Trabalho com HTML, CSS e JavaScript. Atualmente, estou aprofundando meus estudos em TypeScript e React. <br>Este portfólio reúne meus projetos mais bem desenvolvidos. <br><br>Além de compartilhar o que venho criando, também estou em busca de oportunidades para atuar profissionalmente. <br><br> Sou grato por sua visita. Fique à vontade para explorar meu trabalho.</p>
+        </section>
+        <section class="sessao projetos" id="projetos">
+            <h2 class="projetos__titulo">Meus projetos</h2>
+            <ul class="lista-projetos">
+                <template id="template-projeto">
+                    <li class="projeto">
+                        <input class="projeto__input-previa" type="checkbox" id="">
+                        <label class="projeto__imagem" for="" style="--bg: url(../img/projects/poder-dos-talismas.jpg); --bg-mobile: url(../img/projects/poder-dos-talismas--mobile.png)"></label>
+                        <div class="projeto__detalhes">
+                            <h3 class="detalhes__nome"></h3>
+                            <p class="detalhes__descricao"></p>
+                        </div>
+                        <div class="projeto__container-botoes">
+                            <a href="" title="Ver projeto" class="btn-link" id="toGitHubPages" target="_blank" rel="noopener noreferrer">Ver projeto</a>
+                            <a href="" title="Ver repositório" class="btn-link" id="toRepositorio" target="_blank" rel="noopener noreferrer">Ver repositório</a>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+        </section>
+        <section class="sessao contatos" id="contatos">
+            <h2 class="contatos__titulo">Entre em contato comigo</h2>
+            <span class="contatos__texto">Este é o meu email, aguardo sua mensagem</span>
+            <div class="contatos__email">
+                <span class="email" id="email">davialcantara.dev@gmail.com</span>
+                <button class="email__btn-copiar" id="btn-copiar-email">Copiar</button>
+            </div>  
+            <span class="contatos__texto">Você também pode acessar minhas redes:</span>
+            <div class="contatos__links">
+                <a class="btn-link" href="https://www.linkedin.com/in/davialcantaradev" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                <a class="btn-link" href="https://github.com/davialcantaradev" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <span class="contatos__texto">Aqui você acessa meu currículo:</span>
+            <a class="btn-link btn-curriculo" href="src/curriculo/Davi de Alcantara Saraiva.pdf" target="_blank" rel="noopener noreferrer">Ver currículo</a>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">Davi de Alcantara Saraiva - 2025</p>
+    </footer>
+    <script src="src/js/navegacao.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+section.contatos {
+    height: 80dvh;
+    padding: 10px;
+    background-color: var(--background-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contatos__titulo {
+    margin-bottom: 6dvh;
+    color: var(--cor-verde);
+    text-align: center;
+    font-size: clamp(20px, 3.5rem, 48px);
+    font-family: var(--fonte-principal);
+}
+
+.contatos__texto {
+    display: block;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: clamp(12px, 1.8rem, 24px);
+    color: var(--cor-branco);
+}
+
+.contatos__email, .contatos__links, .btn-curriculo {
+    margin-top: 10px;
+    margin-bottom: 4dvh;
+}
+
+.contatos__email {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.contatos__email>.email {
+    padding: 10px;
+    border-radius: 4px;
+    font-size: clamp(12px, 1.8rem, 24px);
+    font-family: var(--fonte-principal);
+    color: var(--cor-verde);
+    border: 1px solid var(--cor-verde);
+}
+
+.email__btn-copiar {
+    font-size: clamp(12px, 1.8rem, 24px);
+    font-family: var(--fonte-principal);
+    text-align: center;
+    width: clamp(90px, 25vw, 130px);
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    border: 1px solid var(--cor-branco);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--cor-branco);
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+}
+
+.email__btn-copiar:hover {
+    color: var(--cor-cinza-escuro);
+    border-color: var(--cor-verde);
+}
+
+.email__btn-copiar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: var(--cor-verde);
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 250ms;
+}
+
+.email__btn-copiar:hover::after {
+    transform: scaleY(1);
+
+}
+
+.contatos__links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-link {
+    padding: 10px 3vw;
+    position: relative;
+    border: 1px solid var(--cor-branco);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--cor-branco);
+    cursor: pointer;
+    z-index: 1;
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: clamp(12px, 1.8rem, 24px);
+}
+
+.btn-link:hover {
+    border: 1px solid var(--cor-verde);
+    color: #222;
+    transform: translateY(-2px);
+}
+
+.btn-link:active {
+    transform: translateY(0);
+}
+
+.btn-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: var(--cor-verde);
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 250ms;
+}
+
+.btn-link:hover::after {
+    transform: scaleY(1);
+}
